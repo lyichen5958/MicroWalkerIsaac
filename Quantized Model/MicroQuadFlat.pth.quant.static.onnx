@@ -1,0 +1,476 @@
+onnx.quantize0.1.0:…¢
+Š
+,model.a2c_network.actor_mlp.0.bias_quantized
+(model.a2c_network.actor_mlp.0.bias_scale
+-model.a2c_network.actor_mlp.0.bias_zero_point:model.a2c_network.actor_mlp.0.bias_DequantizeLinear_Output3model.a2c_network.actor_mlp.0.bias_DequantizeLinear"DequantizeLinear
+Š
+,model.a2c_network.actor_mlp.2.bias_quantized
+(model.a2c_network.actor_mlp.2.bias_scale
+-model.a2c_network.actor_mlp.2.bias_zero_point:model.a2c_network.actor_mlp.2.bias_DequantizeLinear_Output3model.a2c_network.actor_mlp.2.bias_DequantizeLinear"DequantizeLinear
+İ
+#model.a2c_network.mu.bias_quantized
+model.a2c_network.mu.bias_scale
+$model.a2c_network.mu.bias_zero_point1model.a2c_network.mu.bias_DequantizeLinear_Output*model.a2c_network.mu.bias_DequantizeLinear"DequantizeLinear
+Œ
+observations
+observations_scale
+observations_zero_point"observations_QuantizeLinear_Outputobservations_QuantizeLinear"QuantizeLinear
+«
+onnx::MatMul_21_quantized
+onnx::MatMul_21_scale
+onnx::MatMul_21_zero_point'onnx::MatMul_21_DequantizeLinear_Output onnx::MatMul_21_DequantizeLinear"DequantizeLinear
+«
+onnx::MatMul_22_quantized
+onnx::MatMul_22_scale
+onnx::MatMul_22_zero_point'onnx::MatMul_22_DequantizeLinear_Output onnx::MatMul_22_DequantizeLinear"DequantizeLinear
+«
+onnx::MatMul_23_quantized
+onnx::MatMul_23_scale
+onnx::MatMul_23_zero_point'onnx::MatMul_23_DequantizeLinear_Output onnx::MatMul_23_DequantizeLinear"DequantizeLinear
+¨
+"observations_QuantizeLinear_Output
+observations_scale
+observations_zero_point$observations_DequantizeLinear_Outputobservations_DequantizeLinear"DequantizeLinear
+ş
+$observations_DequantizeLinear_Output
+'onnx::MatMul_21_DequantizeLinear_Output,/model/actor_mlp/actor_mlp.0/MatMul_output_0#/model/actor_mlp/actor_mlp.0/MatMul"MatMul2Ñ/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/linear.py(114): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/container.py(204): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+export.py(185): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/rl_games/algos_torch/flatten.py(211): <lambda>
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/rl_games/algos_torch/flatten.py(251): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(118): wrapper
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(132): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(1184): _get_trace_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(896): _trace_and_get_graph_from_model
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(987): _create_jit_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(1111): _model_to_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(1539): _export
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(519): export
+export.py(198): launch_rlg_hydra
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/core/utils.py(186): run_job
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/hydra.py(127): run
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(461): <lambda>
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(219): run_and_report
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(458): _run_app
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(401): _run_hydra
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/main.py(95): decorated_main
+export.py(215): <module>
+
+¬
+,/model/actor_mlp/actor_mlp.0/MatMul_output_0
+2/model/actor_mlp/actor_mlp.0/MatMul_output_0_scale
+7/model/actor_mlp/actor_mlp.0/MatMul_output_0_zero_pointB/model/actor_mlp/actor_mlp.0/MatMul_output_0_QuantizeLinear_Output;/model/actor_mlp/actor_mlp.0/MatMul_output_0_QuantizeLinear"QuantizeLinear
+È
+B/model/actor_mlp/actor_mlp.0/MatMul_output_0_QuantizeLinear_Output
+2/model/actor_mlp/actor_mlp.0/MatMul_output_0_scale
+7/model/actor_mlp/actor_mlp.0/MatMul_output_0_zero_pointD/model/actor_mlp/actor_mlp.0/MatMul_output_0_DequantizeLinear_Output=/model/actor_mlp/actor_mlp.0/MatMul_output_0_DequantizeLinear"DequantizeLinear
+¨
+:model.a2c_network.actor_mlp.0.bias_DequantizeLinear_Output
+D/model/actor_mlp/actor_mlp.0/MatMul_output_0_DequantizeLinear_Output)/model/actor_mlp/actor_mlp.0/Add_output_0 /model/actor_mlp/actor_mlp.0/Add"Add2Ñ/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/linear.py(114): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/container.py(204): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+export.py(185): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/rl_games/algos_torch/flatten.py(211): <lambda>
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/rl_games/algos_torch/flatten.py(251): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(118): wrapper
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(132): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(1184): _get_trace_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(896): _trace_and_get_graph_from_model
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(987): _create_jit_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(1111): _model_to_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(1539): _export
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(519): export
+export.py(198): launch_rlg_hydra
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/core/utils.py(186): run_job
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/hydra.py(127): run
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(461): <lambda>
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(219): run_and_report
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(458): _run_app
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(401): _run_hydra
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/main.py(95): decorated_main
+export.py(215): <module>
+
+
+)/model/actor_mlp/actor_mlp.0/Add_output_0
+//model/actor_mlp/actor_mlp.0/Add_output_0_scale
+4/model/actor_mlp/actor_mlp.0/Add_output_0_zero_point?/model/actor_mlp/actor_mlp.0/Add_output_0_QuantizeLinear_Output8/model/actor_mlp/actor_mlp.0/Add_output_0_QuantizeLinear"QuantizeLinear
+¹
+?/model/actor_mlp/actor_mlp.0/Add_output_0_QuantizeLinear_Output
+//model/actor_mlp/actor_mlp.0/Add_output_0_scale
+4/model/actor_mlp/actor_mlp.0/Add_output_0_zero_pointA/model/actor_mlp/actor_mlp.0/Add_output_0_DequantizeLinear_Output:/model/actor_mlp/actor_mlp.0/Add_output_0_DequantizeLinear"DequantizeLinear
+Ú
+A/model/actor_mlp/actor_mlp.0/Add_output_0_DequantizeLinear_Output)/model/actor_mlp/actor_mlp.1/Elu_output_0 /model/actor_mlp/actor_mlp.1/Elu"Elu*
+alpha  €? 2±/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/functional.py(1548): elu
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/activation.py(516): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/container.py(204): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+export.py(185): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/rl_games/algos_torch/flatten.py(211): <lambda>
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/rl_games/algos_torch/flatten.py(251): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(118): wrapper
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(132): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(1184): _get_trace_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(896): _trace_and_get_graph_from_model
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(987): _create_jit_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(1111): _model_to_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(1539): _export
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(519): export
+export.py(198): launch_rlg_hydra
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/core/utils.py(186): run_job
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/hydra.py(127): run
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(461): <lambda>
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(219): run_and_report
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(458): _run_app
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(401): _run_hydra
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/main.py(95): decorated_main
+export.py(215): <module>
+
+
+)/model/actor_mlp/actor_mlp.1/Elu_output_0
+//model/actor_mlp/actor_mlp.1/Elu_output_0_scale
+4/model/actor_mlp/actor_mlp.1/Elu_output_0_zero_point?/model/actor_mlp/actor_mlp.1/Elu_output_0_QuantizeLinear_Output8/model/actor_mlp/actor_mlp.1/Elu_output_0_QuantizeLinear"QuantizeLinear
+¹
+?/model/actor_mlp/actor_mlp.1/Elu_output_0_QuantizeLinear_Output
+//model/actor_mlp/actor_mlp.1/Elu_output_0_scale
+4/model/actor_mlp/actor_mlp.1/Elu_output_0_zero_pointA/model/actor_mlp/actor_mlp.1/Elu_output_0_DequantizeLinear_Output:/model/actor_mlp/actor_mlp.1/Elu_output_0_DequantizeLinear"DequantizeLinear
+›
+A/model/actor_mlp/actor_mlp.1/Elu_output_0_DequantizeLinear_Output
+'onnx::MatMul_22_DequantizeLinear_Output,/model/actor_mlp/actor_mlp.2/MatMul_output_0#/model/actor_mlp/actor_mlp.2/MatMul"MatMul2Ñ/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/linear.py(114): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/container.py(204): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+export.py(185): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/rl_games/algos_torch/flatten.py(211): <lambda>
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/rl_games/algos_torch/flatten.py(251): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(118): wrapper
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(132): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(1184): _get_trace_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(896): _trace_and_get_graph_from_model
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(987): _create_jit_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(1111): _model_to_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(1539): _export
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(519): export
+export.py(198): launch_rlg_hydra
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/core/utils.py(186): run_job
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/hydra.py(127): run
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(461): <lambda>
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(219): run_and_report
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(458): _run_app
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(401): _run_hydra
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/main.py(95): decorated_main
+export.py(215): <module>
+
+¬
+,/model/actor_mlp/actor_mlp.2/MatMul_output_0
+2/model/actor_mlp/actor_mlp.2/MatMul_output_0_scale
+7/model/actor_mlp/actor_mlp.2/MatMul_output_0_zero_pointB/model/actor_mlp/actor_mlp.2/MatMul_output_0_QuantizeLinear_Output;/model/actor_mlp/actor_mlp.2/MatMul_output_0_QuantizeLinear"QuantizeLinear
+È
+B/model/actor_mlp/actor_mlp.2/MatMul_output_0_QuantizeLinear_Output
+2/model/actor_mlp/actor_mlp.2/MatMul_output_0_scale
+7/model/actor_mlp/actor_mlp.2/MatMul_output_0_zero_pointD/model/actor_mlp/actor_mlp.2/MatMul_output_0_DequantizeLinear_Output=/model/actor_mlp/actor_mlp.2/MatMul_output_0_DequantizeLinear"DequantizeLinear
+¨
+:model.a2c_network.actor_mlp.2.bias_DequantizeLinear_Output
+D/model/actor_mlp/actor_mlp.2/MatMul_output_0_DequantizeLinear_Output)/model/actor_mlp/actor_mlp.2/Add_output_0 /model/actor_mlp/actor_mlp.2/Add"Add2Ñ/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/linear.py(114): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/container.py(204): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+export.py(185): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/rl_games/algos_torch/flatten.py(211): <lambda>
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/rl_games/algos_torch/flatten.py(251): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(118): wrapper
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(132): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(1184): _get_trace_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(896): _trace_and_get_graph_from_model
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(987): _create_jit_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(1111): _model_to_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(1539): _export
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(519): export
+export.py(198): launch_rlg_hydra
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/core/utils.py(186): run_job
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/hydra.py(127): run
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(461): <lambda>
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(219): run_and_report
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(458): _run_app
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(401): _run_hydra
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/main.py(95): decorated_main
+export.py(215): <module>
+
+
+)/model/actor_mlp/actor_mlp.2/Add_output_0
+//model/actor_mlp/actor_mlp.2/Add_output_0_scale
+4/model/actor_mlp/actor_mlp.2/Add_output_0_zero_point?/model/actor_mlp/actor_mlp.2/Add_output_0_QuantizeLinear_Output8/model/actor_mlp/actor_mlp.2/Add_output_0_QuantizeLinear"QuantizeLinear
+¹
+?/model/actor_mlp/actor_mlp.2/Add_output_0_QuantizeLinear_Output
+//model/actor_mlp/actor_mlp.2/Add_output_0_scale
+4/model/actor_mlp/actor_mlp.2/Add_output_0_zero_pointA/model/actor_mlp/actor_mlp.2/Add_output_0_DequantizeLinear_Output:/model/actor_mlp/actor_mlp.2/Add_output_0_DequantizeLinear"DequantizeLinear
+Ú
+A/model/actor_mlp/actor_mlp.2/Add_output_0_DequantizeLinear_Output)/model/actor_mlp/actor_mlp.3/Elu_output_0 /model/actor_mlp/actor_mlp.3/Elu"Elu*
+alpha  €? 2±/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/functional.py(1548): elu
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/activation.py(516): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/container.py(204): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+export.py(185): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/rl_games/algos_torch/flatten.py(211): <lambda>
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/rl_games/algos_torch/flatten.py(251): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(118): wrapper
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(132): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(1184): _get_trace_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(896): _trace_and_get_graph_from_model
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(987): _create_jit_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(1111): _model_to_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(1539): _export
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(519): export
+export.py(198): launch_rlg_hydra
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/core/utils.py(186): run_job
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/hydra.py(127): run
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(461): <lambda>
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(219): run_and_report
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(458): _run_app
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(401): _run_hydra
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/main.py(95): decorated_main
+export.py(215): <module>
+
+
+)/model/actor_mlp/actor_mlp.3/Elu_output_0
+//model/actor_mlp/actor_mlp.3/Elu_output_0_scale
+4/model/actor_mlp/actor_mlp.3/Elu_output_0_zero_point?/model/actor_mlp/actor_mlp.3/Elu_output_0_QuantizeLinear_Output8/model/actor_mlp/actor_mlp.3/Elu_output_0_QuantizeLinear"QuantizeLinear
+¹
+?/model/actor_mlp/actor_mlp.3/Elu_output_0_QuantizeLinear_Output
+//model/actor_mlp/actor_mlp.3/Elu_output_0_scale
+4/model/actor_mlp/actor_mlp.3/Elu_output_0_zero_pointA/model/actor_mlp/actor_mlp.3/Elu_output_0_DequantizeLinear_Output:/model/actor_mlp/actor_mlp.3/Elu_output_0_DequantizeLinear"DequantizeLinear
+¾
+A/model/actor_mlp/actor_mlp.3/Elu_output_0_DequantizeLinear_Output
+'onnx::MatMul_23_DequantizeLinear_Output/model/mu/MatMul_output_0/model/mu/MatMul"MatMul2š/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/linear.py(114): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+export.py(186): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/rl_games/algos_torch/flatten.py(211): <lambda>
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/rl_games/algos_torch/flatten.py(251): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(118): wrapper
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(132): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(1184): _get_trace_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(896): _trace_and_get_graph_from_model
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(987): _create_jit_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(1111): _model_to_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(1539): _export
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(519): export
+export.py(198): launch_rlg_hydra
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/core/utils.py(186): run_job
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/hydra.py(127): run
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(461): <lambda>
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(219): run_and_report
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(458): _run_app
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(401): _run_hydra
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/main.py(95): decorated_main
+export.py(215): <module>
+
+Í
+/model/mu/MatMul_output_0
+/model/mu/MatMul_output_0_scale
+$/model/mu/MatMul_output_0_zero_point//model/mu/MatMul_output_0_QuantizeLinear_Output(/model/mu/MatMul_output_0_QuantizeLinear"QuantizeLinear
+é
+//model/mu/MatMul_output_0_QuantizeLinear_Output
+/model/mu/MatMul_output_0_scale
+$/model/mu/MatMul_output_0_zero_point1/model/mu/MatMul_output_0_DequantizeLinear_Output*/model/mu/MatMul_output_0_DequantizeLinear"DequantizeLinear
+µ
+1model.a2c_network.mu.bias_DequantizeLinear_Output
+1/model/mu/MatMul_output_0_DequantizeLinear_Outputactions_QuantizeLinear_Input/model/mu/Add"Add2š/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/linear.py(114): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+export.py(186): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/rl_games/algos_torch/flatten.py(211): <lambda>
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/rl_games/algos_torch/flatten.py(251): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1182): _slow_forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(118): wrapper
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(132): forward
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/nn/modules/module.py(1194): _call_impl
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/jit/_trace.py(1184): _get_trace_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(896): _trace_and_get_graph_from_model
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(987): _create_jit_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(1111): _model_to_graph
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(1539): _export
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/torch/onnx/utils.py(519): export
+export.py(198): launch_rlg_hydra
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/core/utils.py(186): run_job
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/hydra.py(127): run
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(461): <lambda>
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(219): run_and_report
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(458): _run_app
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/_internal/utils.py(401): _run_hydra
+/home/hiro/anaconda3/envs/rl4/lib/python3.7/site-packages/hydra/main.py(95): decorated_main
+export.py(215): <module>
+
+ˆ
+actions_QuantizeLinear_Input
+actions_scale
+actions_zero_pointactions_QuantizeLinear_Outputactions_QuantizeLinear"QuantizeLinear
+w
+actions_QuantizeLinear_Output
+actions_scale
+actions_zero_pointactionsactions_DequantizeLinear"DequantizeLinear	torch_jit**Bobservations_zero_point*"¿æ²=Bobservations_scale*"pJ¾;Bonnx::MatMul_21_scale*!* Bonnx::MatMul_21_zero_point*¤$@Bonnx::MatMul_21_quantizedJ€(ï¿+
+¼í#íğæüøÛáÏ0Óüãİôİ)úÿøq7úæ÷.óû¿$ü #ıD"b!Ş-)ûØûÜêÖÖ
+ÿ%ı3 Ëï óàó÷öø7å+	ÒŞ#!ïëDò4íîñøåû&àü÷é:ïôèÿ	ùïì F7ìù#,ì)ñŞ'åóÿò
+ÿ÷ãë*éÚĞEÖï	ìúäÍğã
+#şÿóìÍÿ+ôøŞÒóéùûñíçÿ# #ëéíÚ×ÕEìæñşìïñ(î÷Ô+ñùöÑøó#ì,$
++îÅÖï÷Ï÷ıû÷ğ81ø&ÜùŞR50ë%/5+ÜÏ-(O	(ÿâêóèÎü÷ûôãâí×
+îéğöõæşóëúø ñòóüş	ûëïüù-"ôËà!;
+äïæ?ËÛôÍï!âºöÀÌL•åÕ>6à$'øQÊñë®§ÂÕ'è¹1ã×ùùĞéùçIşæóú/úUıİØû òğæòßîş÷÷ôĞí(éÛ×ÿôÏôİâêõß÷èùñÁäÿÌÿòÖóş×ô×çİ'÷êÏõÜåÑ	ßæòëÓíõÔ	ôåĞ=ç!İùõBøÕñù"'	ëDıÜâ!8éåé ßè%($&ø8ïã 	ş# ùûóàøöõüñáûêöíìóüşîæï
+íúëûõş
+şûáüûöó÷
+íëéãöòñÿû
+úñõæûòòñ
+ğüôùûåüìëè$í Şğë ñìö ãïãûäÈëøÑÓêïùîÿçğûøäãôË)ÄÓ+íüğŞñèáå	&L(÷@êù û$İİ
+'ïõ 
+ Òåşë
+åîú×éÚ(ìööáè%íŞòÖş$éçøú&ôø óãêô:ôüî'ì ûı ı"òşëË
+ÛİïóçúÚıÚ şıö
+ñòõîéøğ ÷'éğÿçüÑ<ûÕñï	ìşó$ö	æğñõãêßòüè÷ç şñúñİğõë	ø÷ü4ïöŞ	÷øó	áçíğ#ëæÅßæâøøôïÙàÃË 	øûäõøîêîşòÈÿñøïí		êê
+íÿâ"ììü,æóøú
+şù
+ø	ëÛïÊõ	àæúõå$ÿøáÅìûõ7æî İòÿôåîúÛöûûïöÙôøô
+õê+/
+ìÙõÛúÅøì,*õùúñ  ã*&
+$(ûøî!%òõíå÷õşõäøõë  íúôó&ÿ
+ıíğùø×
+óããÖõòôÃåöâ÷şùåüøõ8İï"øæŞşï6çíğê.ã	øıêÈÿâıüõôì÷)İ
+÷ææÉ&û é ß÷ôûû
+
+&ìé& óÿ+$äêıä ûàÌìòñøçñ$*ö
+çòß÷ş=ïïñã' çøûïü îöêßùàıíÈôáÖüàßìâú öüï
+ö÷áıÁêøüüıöëÙëôëúÕğ	Bé$ùßõ%è$ïà(/$ôíÓö×+Æûó#Ú	¿çü!ûÿëßñéêóÛîñåÄèâĞ
+èãô
+ıà1	ã#ñöö+Î ÿÓËæé ôÊ×üäøõÿòòòş'ùû òİìåüüÕ òæåğçÜüë÷ò÷ïğìõêıúüõòôñé
+ãêøâïúíÁñé.óÿğ%Ùòşû
+öşùìõëôÚ
+
+Õæç÷ßÙöşòâûıêŞô$å ÕÌ'ú'èŞóïûôğûÜóÖóöóÉşŞúùııÓş!ê.÷öôèíõõ×1øæÉüùú!òØä5ëçş
+÷üıŞáæ úıÜØê&çå&ğÊáøî
+7äë Íïùî×4êæıßÖüìçøäıõèõùóüãïóïù
+!òæßïõúşçìó	ïöêÎçğûÒïçùóóşôùşã÷*ñßïûôô *æü÷úéç
+üß ¿øÛø÷ìó÷ã óğã&ùôØã ìùäö3ğı$ç,í4ïíëÔ÷ö)êèæàóüìü Øîî ú' îà%ëûïîÏş+ğ'	öùıüıëûïóéÿäòşøíùé$öôãßï&õ÷äÁêíã	*G*
+şÿÿÿÿÿÿÿÿB7/model/actor_mlp/actor_mlp.0/MatMul_output_0_zero_point*<"×é=B2/model/actor_mlp/actor_mlp.0/MatMul_output_0_scale*2"zÄ(;B(model.a2c_network.actor_mlp.0.bias_scale*4* B-model.a2c_network.actor_mlp.0.bias_zero_point*t@B,model.a2c_network.actor_mlp.0.bias_quantizedJ@&üMFJ+ØBRNWÊÚVßJWé+/JlN:LRäC_;
+ì<Ld°5YæT4)ş9-=¾²ÔAÊ/A9*D*
+ıÿÿÿÿÿÿÿÿB4/model/actor_mlp/actor_mlp.0/Add_output_0_zero_point*9"(©=B//model/actor_mlp/actor_mlp.0/Add_output_0_scale*D*
+«ÿÿÿÿÿÿÿÿB4/model/actor_mlp/actor_mlp.1/Elu_output_0_zero_point*9"¬è½<B//model/actor_mlp/actor_mlp.1/Elu_output_0_scale*"êe‹;Bonnx::MatMul_22_scale*!* Bonnx::MatMul_22_zero_point*¤@ Bonnx::MatMul_22_quantizedJ€8ÍÔ3ïá'Ùÿ3	ÿî°:÷Ì2«ÄŠúå'ôûìüõúîéà
+Ğ$Çêé¿â±·äåÖĞÕ'%çÜ&áë!ÕÒá3ú 	Ìæ¶øôáúùöüÛíúÎ#Úãëó"Èı!ÒÑüşÍŞïÒÃ%Êúç(æÉéôğ E0ÍóĞı×ó×æÈòì $ñùÛáöÓ î
+÷á1ÃúçöÆÖøâ
+ñå
+ò©õîîîİöäïôúÀôì,î+íå ãìêÊ"ïÏ )-2ìîóPÚ+ÚÌö ¾çÇïÑÃıŞÂÖÛíıöğü$ù²ÛïÊI  ãí¦öÔÜ$ßæŞ4şëëå)&ç×âÜéÑ  áğ	ÆÚŞıÇ ôÿä÷Ú*ûµÜìö+öúÊ4.åè!é6+íöğ# ÜÏô÷Ö
+ôı!ĞüçËëŞğ	3ÿñ%Îû§ÏŞøíüêõ1àùçÜ#ÄıŞÚûÍÓÿìú (ùÛ3<0ìñß×7´òê$ŞË«æûÜÇÑ´à	½ıïìÙõÙüûí0
+ #İáÛï	ÊÙ	ÿíôù2÷ôàóëò/óâÔèüäÈºã÷äû)îãü¾õ2õ
+±;úûÿã"ù÷åáûû¨ªä½å¶ò¿Ó'şôâËÙÿ9ÅŞùûöùâÑûÿÿáñ ìê÷ áğõ +>ZNİşçíÂ'Eëåúæ"ìÁíóòÀïææşôï!á¾éõïáİøóçß ïğñ#ôôâàóòÖ´ìÇæçÉıÂÓ
+÷èìĞüÇÊòèèêü½æ&ï7Ò¶ĞïûşÛé4ôäÈõíÏÒ$5¡øïÓıò5şÚËì«ÈøİÂÒ)ïêÿÑåÏÚêïìÌõë%èïöáò÷2÷0ãğ5şàÅùøóĞŠğ5şÈíèÃAÖİ²ìæíÑëè  öåéíÎëØ
+.-!!;üËòöØÖ-;ö ôÛÚ8íúÙì.
+ éößşóéİ *!+ôñùæãç
+û' ğĞïâå¿ø ÁÀñ'à	ìÊÍ¿&Şşğ#ÍÊû ÃıÿÒ5ß#ô)éóßÚøØÛü»×ûñöµÿââìúÒÿ5Şóûøíõı ÛÊŞéËöõØåôëÿêÚì%Óôãøé¹í+&÷ôæûõÛ)ßçP#- î7!µıı¾è1äÆóè&áìÜ<ôï¸- ôıóİÑ½
+èúÌ²¯ãğ
+ü!!ÉíÿÛùËÚßàòü	ù,ØØöîÿ4ıççèêô¾ úæ¨Ñ
+ù)&ù8ğçêèã$â
+ûÿ
+èÒñíóòØæêé¼÷	ü¼éÚÇı¾*"öşåâñÚñöïé-ö¤×:ïèğé÷!%*ôşäÎæ÷¹üÿ
+Ñıº©ç
+òş	 Û¼&û.<6ğüàËìñşŞº¹Ëí üäÿ¼"óğ$×åÚã÷&ìøŞòÑ$ûçîNô—ÇÇééã·´ûóüÅ>ùö,ğß
+ğø±âù×	ğıèîãÔİ$ëÌ+Øææşø+èëéØëãÒğÊïÍÄøÖÚ àÔúçÙñ1æö#èü>ÇØàù$½ö-.İàşáó0d,ı¾ßÃë÷½á×õÜ°ÌÕèqı(şïÒêûà³ä/#RECóíõèúîßÎíğÚ÷ÊÂÓúşçè4É
+àÛü¿Ñ«Îıèõõ
+
+ĞıÍşòù÷Úôûµ¯!ßÔ/àñÚäŞ­2õ!	
+òÃÖ(à&ùåßøøÔêóÖøÚãéëÇì&ÛêØüşóõÎëÿşìû>ìííÍ	ùJÏ5èğşéKCôOÏè# 6øş@Üàâé1º+íÖæÙÿù	ÒØWĞ½ïáã
+á Üäñşş¼ôÆ íÜ ÛÌîüÃ@Låİ*éã×ÏòÄÒÑ9ì÷ÔÑåÁÛI,ü×ÊÑò	+&!ïëú¶éÀĞïõíïùù¾ÜãÆÍ
+
+ô	èÎÎÆ÷Ôô2ÿçéçá»#	ıù9êë*çè%«ŞÂ¾Şı÷$üê ²,ûñì ûÙúó7ÿ	¹&1-çíı Õı&4øåüî!è×åØ/ì/ÿşäÊşÊÇ5 ààÿ¿øÿı0ıø<âĞÃì*áëÇÍÏ !ÂØÒñı?Êş£K*ùõ$(ÖëÔÚÌ8Ä Gõı âÚÇõÙB úBÂÊïòûçş!õ(ï ÄÎÈı&ù4ÑøıÚ%ì
+æñ*>*?B7/model/actor_mlp/actor_mlp.2/MatMul_output_0_zero_point*<"bR=B2/model/actor_mlp/actor_mlp.2/MatMul_output_0_scale*2"xÃ;B(model.a2c_network.actor_mlp.2.bias_scale*4* B-model.a2c_network.actor_mlp.2.bias_zero_point*T B,model.a2c_network.actor_mlp.2.bias_quantizedJ ÎS_¿ÇVù9Ğ0EŠª±[ª§'ÊâÖÕN­.¥œ2£†*;*>B4/model/actor_mlp/actor_mlp.2/Add_output_0_zero_point*9"ÈY=B//model/actor_mlp/actor_mlp.2/Add_output_0_scale*D*
+¹ÿÿÿÿÿÿÿÿB4/model/actor_mlp/actor_mlp.3/Elu_output_0_zero_point*9"'Ö<B//model/actor_mlp/actor_mlp.3/Elu_output_0_scale*"&Dv;Bonnx::MatMul_23_scale*!* Bonnx::MatMul_23_zero_point*¤ Bonnx::MatMul_23_quantizedJ€ÛÇ	KÖòÀâïÆö&Ç$¤ŞÑ0×÷İñôbõÔÚç3õHéòéÛØæäş«÷ù6ëòàãÌZ)<ôĞÍ&vOë ùö@XNÇ0ñC&à· Ë?û,Ä%9¼ìëë×Ş0Dêçğï	šû ãî'ãJéş½%CúYêää
+<÷Òè%	ıS$Ş÷ÌºÕ¬@ğÓ)úî% ²%ğô+8EÈœÑ%´ğÁ 4;™üÙßíÇ5'ïóÔòBîØ%-«Ç+01%Í ÉüÈó§áüñ$KÕé*+*B$/model/mu/MatMul_output_0_zero_point*)"÷–<B/model/mu/MatMul_output_0_scale*)" m‡:Bmodel.a2c_network.mu.bias_scale*+* B$model.a2c_network.mu.bias_zero_point*3B#model.a2c_network.mu.bias_quantizedJ:BÔPe‘**Bactions_zero_point*"±î”<Bactions_scaleZ
+observations
+
+
+$b
+actions
+
+
+j:
+,/model/actor_mlp/actor_mlp.0/MatMul_output_0
+
+
+@j7
+)/model/actor_mlp/actor_mlp.0/Add_output_0
+
+
+@j7
+)/model/actor_mlp/actor_mlp.1/Elu_output_0
+
+
+@j:
+,/model/actor_mlp/actor_mlp.2/MatMul_output_0
+
+
+ j7
+)/model/actor_mlp/actor_mlp.2/Add_output_0
+
+
+ j7
+)/model/actor_mlp/actor_mlp.3/Elu_output_0
+
+
+ j'
+/model/mu/MatMul_output_0
+
+
+Br
+
+onnx.inferonnxruntime.quant

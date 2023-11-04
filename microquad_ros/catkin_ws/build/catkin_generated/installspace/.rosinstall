@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/hiro/IsaacGymV4/microquad_ros/catkin_ws/install/setup.sh

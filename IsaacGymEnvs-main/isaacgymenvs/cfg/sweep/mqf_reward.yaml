@@ -1,0 +1,19 @@
+project: "mqf_sweep"
+program: train.py
+method: bayes
+metric:
+  name: mean_reward_test
+  goal: maximize
+parameters:
+  lin_c:
+    min: 0.1
+    max: 1
+  # lin_e:
+  #   min: 0.0001
+  #   max: 0.0003
+  ang_c:
+    min: 0.1
+    max: 1
+  # lin_e:
+  #   min: 0.4
+  #   max: 0.6
